@@ -25,14 +25,12 @@ parser = argparse.ArgumentParser(description='Description of your program')
 
 # 添加参数
 parser.add_argument('-s', '--src', help='source directory')
-parser.add_argument('-d', '--dst', help='destination directory')
 
 # 解析参数
 args = parser.parse_args()
 
 # 打印参数
 print('Source directory:', args.src)
-print('Destination directory:', args.dst)
 
     
 face = args.src
