@@ -37,8 +37,8 @@ face = args.src
 # 遍历目录下的所有文件
 for filename in os.listdir(dst_dir):
     # 构造命令字符串
-    print("start: python run.py --gpu-vendor nvidia -f /content/drive/MyDrive/hl/face/{}.jpg -t /content/roop_tmp/{} -o /content/drive/MyDrive/hl/out/{}-{}".format(face, filename, face, filename))
-    command = "python run.py --gpu-vendor nvidia -f /content/drive/MyDrive/hl/face/{}.jpg -t /content/roop_tmp/{} -o /content/drive/MyDrive/hl/out/{}-{}".format(
+    print("start: python run.py --gpu-vendor nvidia -f '/content/drive/MyDrive/hl/face/{}.jpg' -t '/content/roop_tmp/{}' -o '/content/drive/MyDrive/hl/out/{}-{}".format(face, filename, face, filename))
+    command = "python run.py --gpu-vendor nvidia -f '/content/drive/MyDrive/hl/face/{}.jpg' -t '/content/roop_tmp/{}' -o '/content/drive/MyDrive/hl/out/{}-{}'".format(
         face, filename, face, filename)
     # 执行命令
     os.system(command)
